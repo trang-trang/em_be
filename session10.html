@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        input:required
+        {
+            outline: 1px blue solid;
+            color:black;
+        }
+        input:required:valid
+        {
+            background-size:10px 10px;
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+        input:required:invalid
+        {
+            background-size:10px 10px;
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <form method="GET" action="try.php">
+        name: <input type="text" name="name" required="true"/><br/>
+        Telephone:<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="true"><br/>
+        Email:<input type="email" name="emailid" required="true"/><br/>
+        password:<input type="password" name="psw" required="true">
+        <input type="submit" value="submit">
+    </form>
+    <form>
+        <p> Giới tính:</p>
+        <input type="radio" name="gender" value="Nam" checked> Nam<br>
+        <input type="radio" name="gender" value="Nữ" checked> Nữ<br>
+        <input type="radio" name="gender" value="Khác"> Khác<br>
+        Birthday:<input type="datetime-local" name="bdaytime" required="true">
+    </form>
+    <audio controls autoplay>
+        <source src="SƠN TÙNG M-TP HÃY TRAO CHO ANH ft. Snoop Dogg Official MV.mp3" type="audio/mpeg">
+    </audio>
+    <video width="1000" height="1000" controls>
+        <source src="SƠN TÙNG M-TP HÃY TRAO CHO ANH ft. Snoop Dogg Official MV.mp4" type="video/mp4">
+    </video>
+</body>
